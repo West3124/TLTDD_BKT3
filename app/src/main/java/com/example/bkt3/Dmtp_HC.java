@@ -33,6 +33,7 @@ public class Dmtp_HC extends AppCompatActivity {
         dmtp.setOnItemClickListener((adapterView, view, i, l) -> {
             Intent detail = new Intent(Dmtp_HC.this, Detail.class);
             detail.putExtra("tenTP", String.valueOf(tp.get(i)));
+            detail.putExtra("idTP", 0);
             Dmtp_HC.this.startActivity(detail);
         });
     }
